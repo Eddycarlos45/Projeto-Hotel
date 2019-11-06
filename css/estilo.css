@@ -1,0 +1,63 @@
+.titulo-favorito {
+    text-align: center;
+}
+.valores {
+ display: inline;
+}
+.titulo-servicos {
+    text-align: center;
+}
+
+.block-left {
+    background-color: red;
+    width: 100%;
+    height: 400px;
+}
+
+.block-right {
+    width: 100%;
+    height: 400px;
+}
+
+.free-wifi {
+    width: 48%;
+    height: 48%;
+    background-color: black;
+    float: left;
+}
+
+ .room-service {
+    width: 48%;
+    height: 48%;
+    background-color: blue;
+    float: right;
+ }
+
+ .free-parking {
+    width: 48%;
+    height: 48%;
+    background-color: green;
+    float: left;
+ }
+
+ .customer-support {
+    width: 48%;
+    height: 48%;
+    background-color: yellow;
+    float: right;
+ }
+
+ .item {
+    text-align: center;
+    margin: 5px 5px 0 0;
+ }
+
+ .desc-service {
+     font-weight: bold;
+     margin-top: 150px;
+ }
+
+ .img-service {
+     width: 100%;
+     height: 100%;
+ }
