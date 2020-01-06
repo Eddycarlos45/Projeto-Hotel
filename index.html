@@ -9,8 +9,81 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
-
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Plaza</a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 <body>
+  <!-- Carousel -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <figure class="item active">
+        <img src="imagem1.jpg">
+        <figcaption class="carousel-caption">
+          <h3>Hotel La Plaza</h3>
+          <p>Aqui voc</p>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="imagem2.jpg">
+        <figcaption class="carousel-caption">
+          <h3>João Paulo</h3>
+          <p>Excelentes no que fazem</p>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="imagem3.jpg">
+        <figcaption class="carousel-caption">
+          <h3>Mario Brós</h3>
+          <p>Ótima empresa, gostei muito do trabalho de vocês</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
   <section>
     <div class="container">
       <div class="titulo-favorito">
@@ -35,7 +108,6 @@
             <img class="card-img-top" src="img/quarto2.png" alt="Imagem de capa do card">
             <div class="card-body">
               <h5 class="card-title">Título do card</h5>
-              <span>valor</span>
               <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o
                 conteúdo
                 do card.</p>
@@ -66,27 +138,37 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 flexbox">
-            <div class="item free-wifi"> 
-              <p class="desc-service">Free WiFi</p>
-            </div>
-            <div class="item room-service">
-              <p class="desc-service">Room Service</p>
-            </div>
-            <div class="item free-parking">
-              <p class="desc-service">Free Parking</p>
-            </div>
-            <div class="item customer-support">
-              <p class="desc-service" >Custumer Support</p>
-            </div>
+          <div class="item free-wifi">
+            <p class="desc-service">Free WiFi</p>
           </div>
+          <div class="item room-service">
+            <p class="desc-service">Room Service</p>
+          </div>
+          <div class="item free-parking">
+            <p class="desc-service">Free Parking</p>
+          </div>
+          <div class="item customer-support">
+            <p class="desc-service">Custumer Support</p>
+          </div>
+        </div>
         <div class="col-md-6">
           <div class="block-right">
-            <img class="img-service"src="service.jpg" alt="Serviços">
+            <img class="img-service" src="service.jpg" alt="Serviços">
           </div>
         </div>
       </div>
     </div>
   </section>
+  <footer class="footer">
+    <h2 class="titulo-footer">La Plaza</h2>
+    <ul class="contatos">
+      <li>email: hotelplaza@contato.com</li>
+      <li>tel: 19 995684571</li>
+    </ul>
+  </footer>
 </body>
+<script src="jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
 
 </html>
