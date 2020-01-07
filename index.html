@@ -10,35 +10,38 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Plaza</a>
-      </div>
-  
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Plaza</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 <body>
   <!-- Carousel -->
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -130,41 +133,54 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="titulo-servicos">
-      <h1>Outros serviços especiais</h1>
-      <p>Também oferecemos outros serviços para melhor atender os nossos clientes</p>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 flexbox">
-          <div class="item free-wifi">
-            <p class="desc-service">Free WiFi</p>
+  <!-- Formulario -->
+  <div class="container">
+    <div class="row">
+      <section id="contato" class="container col-sm-6">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco</p>
+        <label for="contato-nome">Nome:</label>
+        <input type="text" placeholder="Seu Nome" class="form-control" id="contato-nome">
+        <label for="contato-email">Nome:</label>
+        <div class="input-group">
+          <div class="input-group-addon">@</div>
+          <input type="text" placeholder="Seu e-mail" class="form-control" id="contato-email">
+        </div>
+        <div class="group-radio">
+          <div class="radio">
+            <label>
+              <input type="radio" name="tipo-pessoa">
+              Pessoa Física
+            </label>
           </div>
-          <div class="item room-service">
-            <p class="desc-service">Room Service</p>
-          </div>
-          <div class="item free-parking">
-            <p class="desc-service">Free Parking</p>
-          </div>
-          <div class="item customer-support">
-            <p class="desc-service">Custumer Support</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="tipo-pessoa">
+              Pessoa Jurídica
+            </label>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="block-right">
-            <img class="img-service" src="service.jpg" alt="Serviços">
-          </div>
-        </div>
-      </div>
+        <!--
+  --><select class="form-control form-select">
+          <option selected disabled>Tipo de Situação</option>
+          <option value="">Casa</option>
+          <option value="">Apartamento</option>
+          <option value="">Mansão</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Enviar</button>
     </div>
+  </div>
   </section>
-  <footer class="footer">
-    <h2 class="titulo-footer">La Plaza</h2>
-    <ul class="contatos">
-      <li>email: hotelplaza@contato.com</li>
-      <li>tel: 19 995684571</li>
-    </ul>
+  <footer>
+    <address>
+      <strong>TopCasaFina Arquitetura</strong>
+      Rua Vergueiro, 3185, Vila Mariana<br>
+      São Paulo, Sp<br>
+      Tel:(11) 5571-2751 ou 5083-3884
+    </address>
+    <address>
+      Email: contato.topcasafina@alura.com.br
+    </address>
   </footer>
 </body>
 <script src="jquery.js"></script>
